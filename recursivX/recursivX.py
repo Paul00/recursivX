@@ -209,7 +209,7 @@ def extract_layers(start_file, output_root):
     print(f"[→] Log written to: {log_path}")
 
 
-if __name__ == "__main__":
+def main():
     import argparse
     parser = argparse.ArgumentParser(
         description="Recursive archive extractor with password detection and logging",
@@ -223,4 +223,6 @@ if __name__ == "__main__":
     extract_layers(args.input_file, args.output)
   
 
+if __name__ == "__main__":
+    main()
 
